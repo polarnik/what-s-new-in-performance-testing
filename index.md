@@ -154,7 +154,7 @@ export function handleSummary(data) {
     return do_handleSummary(data);
 }
 ```
-![bg opacity:40%](img/k6.arrows.png)
+![bg opacity:60%](img/k6.arrows.png)
 
 ---
 
