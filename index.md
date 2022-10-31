@@ -12,11 +12,11 @@ _paginate: false
 <!-- _class: lead
 -->
 
-# Что нового в нагрузке?
+# Что нового в нагрузке
 
-## Смирнов Вячеслав
+## для меня в __2022__ году?
 
-### ![h:55](themes/img/miro.svg) Miro 
+### Смирнов Вячеслав, Miro
 
 <!--
 _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
@@ -31,6 +31,20 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 
 ![bg cover](img/omsk.jpg)
 
+
+---
+
+<!-- _class: main2 -->
+
+
+## 2007, 2018, 2022 : хакер,тимлид,инженер
+
+![bg sepia:0.6](img/x-files-s1-duchovny-mulder-anderson-scully-dvdbash-wordpress039-lone-gunmen.webp)
+
+<!--
+_footer: `https://dvdbash.com/2013/01/20/the-x-files-gallery-season-1/`
+-->
+
 ---
 
 <!-- _class: main2 -->
@@ -43,11 +57,12 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
  -->
 
+
 ---
 
 <!-- _class: main -->
 
-# 1️⃣ Что нового в нагрузке сделал я?
+# 1️⃣ Что нового в нагрузке __сделал я__?
 
 <!--
 _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
@@ -55,17 +70,15 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main2 -->
+
+<div align="center"><video autoplay loop html muted class="bg" onclick="this.paused ? this.play() : this.pause(); this.blur()" onpause="" width="80%"><source src="img/plan.mp4" type="video/mp4"></video></div>
 
 
-## 2007, 2017, 2018, 2021, 2022: хакер, тимлид, инженер
+---
 
-![bg](img/x-files-s1-duchovny-mulder-anderson-scully-dvdbash-wordpress039-lone-gunmen.webp)
+<!-- _class: main -->
 
-<!--
-_footer: `https://dvdbash.com/2013/01/20/the-x-files-gallery-season-1/`
--->
-
+# Цель — создать __сообщество performance-инженеров__ внутри компании
 
 ---
 
@@ -76,13 +89,124 @@ _footer: `https://dvdbash.com/2013/01/20/the-x-files-gallery-season-1/`
 ![bg](img/x-files-i-want-to-believe-david-duchovny-gillian-anderson-mulder-scully-dvdbash-wordpress37.webp)
 <!--
 _footer: `https://dvdbash.com/2013/01/20/the-x-files-movie-i-want-to-believe-2008/`
+
 -->
+
+<!--
+
+AWS, своих датацентров никто не строит, специфика Украины - все хостится в облаках, в России - все хостятся у себя.
+
+Облачные реалии наступают.
+
+В связи с переездом многие вещи. Изменились.
+
+Вот я никогда не работает с AWS и тестирование нагрузки в облаках это другое. Вы не понимаете - это другое.
+
+-->
+
 
 ---
 
-<!-- _class: main -->
+# Другой язык, __AWS__ и облака, тестирование в облаках
 
-# Тестирование __автомасштабирования__ под нагрузкой и его пределов
+![bg 70%](img/english.png)
+
+---
+
+<!-- _class: main2 -->
+
+# Тестирование __обновлении__, __масштабирования__ и __автомасштабирования__
+
+## Hazelcast, JUnit, Jenkins, Prometheus, Grafana
+
+---
+
+# __Старая версия__ системы работает
+
+![bg h:75%](img/update.1.png)
+
+---
+
+# __Новая версия__ системы запускается (с запасом)
+
+![bg h:75%](img/update.2.png)
+
+---
+
+# __Старая версия__ системы останавливается
+
+![bg h:75%](img/update.3.png)
+
+---
+
+# __Быстрый рост на 120-150%__ и быстрый спад
+
+![bg h:75%](img/update.png)
+
+---
+
+# Что нужно протестировать?
+
+## __Быстрый рост кластера__ распределенных кешей
+
+## __Быстрый спад кластера__ распределенных кешей
+
+## __Быстрый рост пула__ подключений к базе данных
+
+## ...
+
+## __Как быстро__ можно запускать и останавливать?
+
+## __На каком размере кластера__ можно обновляться?
+
+---
+
+# __Малый кластер успевает__ синхронизироваться
+
+![bg h:75%](img/cluster.small.png)
+
+---
+
+# __Большой кластер не успевает__ синхронизироваться
+
+![bg h:75%](img/cluster.x2.png)
+
+---
+
+# __Большой кластер не успевает__ синхронизироваться
+
+- Размер пакета с состоянием кластера растет __x 2.2-2.5__
+
+- Количество обновлений состояний кластера растет __x 2.2-2.5__
+
+- Если 1 запрос работает __1 мсек__, то __1000 узлов — предел__ для кластера
+
+- И значит на кластере в __400 узлов__ обновляться еще __можно__
+
+- А на кластере в __500 узлов__ обновляться уже __нельзя__
+
+- Был выбран размер в __200 узлов__
+
+
+
+
+
+
+
+![bg h:75% opacity:40%](img/cluster.x2.png)
+
+<!--
+
+Иллюстрация
+
+Тестирование обновления кластера. 1000 - 2000 нод.
+
+Squisse, тестирование одной ноды на проде до ее пределов.
+Потом две ноды.
+Проверка линейности масшабирования системы.
+
+-->
+
 
 
 ---
@@ -91,12 +215,27 @@ _footer: `https://dvdbash.com/2013/01/20/the-x-files-movie-i-want-to-believe-200
 
 # Давать __метрики командам__, но не судить о производительности
 
+<!--
+
+Команды пугают другие вещи - мы делали-делали, подали нагрузку, а тут вот ... медленно стало. 
+
+Команды хотят Feature toggle. 
+
+Тестированеи производительности
+1) Проверка по факту
+2) Метрики на проде, трейсинг, который покажет, в чем узкое место
+
+Arrange, Act, (Assert)
+
+-->
 
 ---
 
 <!-- _class: main -->
 
 # Переход к __простым__ тестам
+
+Написание тестов на узкое место.  Написание маленького теста на проблему.
 
 ---
 
@@ -187,6 +326,17 @@ export function handleSummary(data) {
 
 # Запуск тестов из __Docker__ с разными профилями
 
+<!--
+Почему раньше не запускали тесты из Docker? Были проблемы производительности самого Docker. Сейчас он позволяет.
+
+Istio, Envoy, balancer, ...
+
+Особенно, когда тестируются сервисы развернутые в k8s
+
+Разработчик может запустить нагрузку локального с локальной машины разработчика
+
+-->
+
 ---
 
 # __Параметризация__ тестовых данных, стенда и профиля
@@ -214,7 +364,11 @@ export function handleSummary(data) {
 
 <!-- _class: main -->
 
-# Автоматизация запуска тестов по расписанию или кнопке через __Jenkins__, __Github Actions__
+# Автоматизация нагрузка по расписанию или кнопке через __Jenkins__, __Github Actions__
+
+<!--
+Много денег надо будет за облако. И для нагрузки становится важно развертывать и свертывать конрут нагрузки.
+-->
 
 ---
 
@@ -240,11 +394,23 @@ export function handleSummary(data) {
 
 # Применение  __Jaeger__ и __OpenTracing__ для составления и анализа профиля нагрузки
 
+<!--
+Добавить картинку.
+-->
 ---
 
 <!-- _class: main -->
 
 # Тесты __API__ продуктива на малой интенсивности
+
+<!--
+Прод стабилен.
+Нагрузить его в 1 rps -- можно.
+Для читающих операций.
+Или даже для пишуших, если его изолировать.
+
+Нагрузить в 100 rps не очень.
+-->
 
 ---
 
@@ -252,7 +418,10 @@ export function handleSummary(data) {
 
 # Тесты продуктива с __sitespeed__**.io**
 
-
+<!--
+lithhouse -- для ручной проверки.
+А тут как LH с мониторингом
+-->
 
 ---
 
@@ -266,12 +435,16 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
+<div align="center"><video autoplay loop html muted class="bg" onclick="this.paused ? this.play() : this.pause(); this.blur()" onpause="" width="80%"><source src="img/plan2.mp4" type="video/mp4"></video></div>
+
+---
+
 - Андрей Похилько - новый инструмент для нагрузки и Mizu.io - отличная утилита для разбора проблем в Kubernetes
 - Илья Бровкин - новая платформа для Web3 https://www.linkedin.com/in/iliyabrovkin/
 - Олесь Писаренко - новый инструмент для нагрузки на GoLang https://www.linkedin.com/in/doctornkz/
 - Андрей Сатарин - https://www.linkedin.com/in/asatarin/ тестирование корректности распределенных систем во время обновления и отката версиий в дополнение к стресс-тестированию в помощью unit-тестов, выполняемых во время обновления или масштабирования системы https://asatarin.github.io/talks/2022-09-upgrade-failures-in-distributed-systems/
 - Андрей Акиньшин - новая книга Профессиональный бенчмаркинг
-- Антон Серпутько - жив, работает в США, участвовал в подкасте по производительности https://t.me/dou_qa/484
+- Антон Серпутько - работает в США, участвовал в подкасте по производительности https://t.me/dou_qa/484
 - Mark Tomlinson - сделал курс по эксплуатационному тестированию производительности, тестирование цель которого в поиске узких мест и записал много новых выпусков подкаста PerfBytes https://www.linkedin.com/in/mtomlins/ 
 - Paul McLean - предоставляет API для тестовых данных, https://www.youtube.com/watch?v=bFAICy5j35M https://www.linkedin.com/in/paulmclean2/ интересные материалы, тестирование производительности Starlink и геораспределенное тестирование с помощью Gatling, тренды тестирования приоизводительности в 2021 году https://www.youtube.com/watch?v=z3yvh4syuqw и https://www.mammoth-ai.com/top-performance-engineering-trends-5-things-your-team-needs-to-know/
 - Joe Calantonio, Performance & SRE Podcast https://testguild.com/podcasts/performance/ и https://www.linkedin.com/in/joecolantonio/
