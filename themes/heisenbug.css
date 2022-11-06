@@ -218,3 +218,8 @@ pre code.language-yml .hljs-regexp,
 pre code.language-yml .hljs-string {
     color: #8abeb755;
 }
+
+pre code.language-yml .hljs-comment,
+pre code.language-yml .hljs-quote {
+    color: #96989655;
+}
