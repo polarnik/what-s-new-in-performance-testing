@@ -129,7 +129,8 @@ section.invert strong {
     font-weight: bold;
 }
 
-section.main h1, section.main h2, section.main2 h1, section.main2 h2  {
+section.main h1, section.main h2, 
+section.main2 h1, section.main2 h2 {
     font-size: 250%;
     position: absolute;
     text-align: center;
@@ -137,7 +138,7 @@ section.main h1, section.main h2, section.main2 h1, section.main2 h2  {
     width: 90%;
     left: 5%;
 }
-section.main h1 {
+section.main h1{
     top: 30%;
 }
 section.main2 h2 {
@@ -150,7 +151,6 @@ section.main, section.main2 {
     background-repeat: no-repeat,  no-repeat;
     background-size: 20%,  100%;
 }
-
 
 pre {
     margin: 0% !important;
@@ -198,5 +198,22 @@ pre code.language-js span.hljs-string,
 pre code.language-js span.hljs-doctag, 
 pre code.language-js span.hljs-regexp
 {
+    color: #8abeb755;
+}
+
+pre code.language-yml .hljs-attr, 
+pre code.language-yml .hljs-attribute {
+    color: #81a2be55;
+}
+
+pre code.language-yml .hljs-number,
+pre code.language-yml .hljs-selector-attr,
+pre code.language-yml .hljs-selector-pseudo {
+    color: #f9915755;
+}
+
+pre code.language-yml .hljs-doctag, 
+pre code.language-yml .hljs-regexp,
+pre code.language-yml .hljs-string {
     color: #8abeb755;
 }
