@@ -137,6 +137,7 @@ section.main2 h1, section.main2 h2 {
     top: 0%;
     width: 90%;
     left: 5%;
+    text-shadow: 2px 2px 5px #000000;
 }
 section.main h1{
     top: 30%;
