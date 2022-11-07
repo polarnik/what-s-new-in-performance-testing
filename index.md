@@ -832,7 +832,7 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 
 ![bg h:78%](img/mockintosh.io.png)
 
-![h:200](img/Andrey.Pokhilko.png)
+![h:250](img/mackintosh.svg)
 
 <!--
 _footer: mockintosh.io
@@ -844,6 +844,7 @@ _footer: mockintosh.io
 
 ![bg h:78%](img/mizu-ui.png)
 
+![h:250](img/getmizu.io.svg)
 
 <!--
 _footer: getmizu.io
@@ -855,23 +856,12 @@ _footer: getmizu.io
 
 ![bg h:78%](img/Understanding-Upgrade-Failures-in-Distributed%20Systems.png)
 
-![h:200](img/asatarin.jpeg)
+![h:250](img/asatarin.svg)
 
 <!--
 _footer: https://asatarin.github.io/talks/2022-09-upgrade-failures-in-distributed-systems/
 -->
 
----
-
-# __Андрей Сатарин__, тестирование распределенных систем
-
-![bg h:78%](img/Testing-Distributed-Systems.png)
-
-![h:200](img/asatarin.jpeg)
-
-<!--
-_footer: https://asatarin.github.io/testing-distributed-systems/
--->
 
 ---
 
@@ -879,10 +869,21 @@ _footer: https://asatarin.github.io/testing-distributed-systems/
 
 ![bg h:78%](img/PERFORMANCE-EXPLORATION-FOR-TESTERS.png)
 
-![h:200](img/Mark-Tomlinson-New-1.webp)
+![h:250](img/Mark.svg)
 
 <!--
 _footer: https://testguild.com/perf-explore-masterclass/
+-->
+
+---
+
+# __Андрей Акиньшин__, Профессиональный бенчмарк
+
+![bg h:78%](img/book.jpg)
+![h:250](img/book.svg)
+
+<!--
+_footer: https://www.piter.com/product/professionalnyy-benchmark-iskusstvo-izmereniya-proizvoditelnosti
 -->
 
 
